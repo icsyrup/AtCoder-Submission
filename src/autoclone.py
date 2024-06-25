@@ -64,7 +64,7 @@ class AutoClone(object):
     """
 
     def __init__(self, time_range):
-        self.user_id = self.load_yml()[gamushiro]
+        self.user_id = self.load_yml()["user_id"]
         self.time_range = time_range
         self.cur_unix_time = int(datetime.timestamp(datetime.now()))
         self.ac_only = True  # future todo
